@@ -37,3 +37,14 @@
 /Users/selim/repo/Carsties/src/AuctionService/bin/Debug/net7.0/System.CodeDom.dll
 /Users/selim/repo/Carsties/src/AuctionService/obj/Debug/net7.0/AuctionService.csproj.AssemblyReference.cache
 /Users/selim/repo/Carsties/src/AuctionService/obj/Debug/net7.0/AuctionService.csproj.CopyComplete
+/Users/selim/repo/Carsties/src/AuctionService/bin/Debug/net7.0/MassTransit.dll
+/Users/selim/repo/Carsties/src/AuctionService/bin/Debug/net7.0/MassTransit.Abstractions.dll
+/Users/selim/repo/Carsties/src/AuctionService/bin/Debug/net7.0/MassTransit.RabbitMqTransport.dll
+/Users/selim/repo/Carsties/src/AuctionService/bin/Debug/net7.0/Microsoft.Extensions.Diagnostics.HealthChecks.dll
+/Users/selim/repo/Carsties/src/AuctionService/bin/Debug/net7.0/Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions.dll
+/Users/selim/repo/Carsties/src/AuctionService/bin/Debug/net7.0/Microsoft.Extensions.Logging.Abstractions.dll
+/Users/selim/repo/Carsties/src/AuctionService/bin/Debug/net7.0/Microsoft.Extensions.Options.dll
+/Users/selim/repo/Carsties/src/AuctionService/bin/Debug/net7.0/RabbitMQ.Client.dll
+/Users/selim/repo/Carsties/src/AuctionService/bin/Debug/net7.0/Contracts.dll
+/Users/selim/repo/Carsties/src/AuctionService/bin/Debug/net7.0/Contracts.pdb
+/Users/selim/repo/Carsties/src/AuctionService/bin/Debug/net7.0/MassTransit.EntityFrameworkCoreIntegration.dll
