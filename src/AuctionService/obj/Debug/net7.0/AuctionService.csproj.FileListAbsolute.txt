@@ -48,3 +48,10 @@
 /Users/selim/repo/Carsties/src/AuctionService/bin/Debug/net7.0/Contracts.dll
 /Users/selim/repo/Carsties/src/AuctionService/bin/Debug/net7.0/Contracts.pdb
 /Users/selim/repo/Carsties/src/AuctionService/bin/Debug/net7.0/MassTransit.EntityFrameworkCoreIntegration.dll
+/Users/selim/repo/Carsties/src/AuctionService/bin/Debug/net7.0/Microsoft.AspNetCore.Authentication.JwtBearer.dll
+/Users/selim/repo/Carsties/src/AuctionService/bin/Debug/net7.0/Microsoft.IdentityModel.JsonWebTokens.dll
+/Users/selim/repo/Carsties/src/AuctionService/bin/Debug/net7.0/Microsoft.IdentityModel.Logging.dll
+/Users/selim/repo/Carsties/src/AuctionService/bin/Debug/net7.0/Microsoft.IdentityModel.Protocols.dll
+/Users/selim/repo/Carsties/src/AuctionService/bin/Debug/net7.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+/Users/selim/repo/Carsties/src/AuctionService/bin/Debug/net7.0/Microsoft.IdentityModel.Tokens.dll
+/Users/selim/repo/Carsties/src/AuctionService/bin/Debug/net7.0/System.IdentityModel.Tokens.Jwt.dll
