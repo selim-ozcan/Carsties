@@ -16,6 +16,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Contracts", "src\Contracts\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IdentityService", "src\IdentityService\IdentityService.csproj", "{5BA34CCF-2576-49ED-82F3-BD7351BA1CD7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GatewayService", "src\GatewayService\GatewayService.csproj", "{63BA4AED-6711-491B-B9B6-499995242606}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -38,6 +40,10 @@ Global
 		{5BA34CCF-2576-49ED-82F3-BD7351BA1CD7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5BA34CCF-2576-49ED-82F3-BD7351BA1CD7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5BA34CCF-2576-49ED-82F3-BD7351BA1CD7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{63BA4AED-6711-491B-B9B6-499995242606}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{63BA4AED-6711-491B-B9B6-499995242606}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{63BA4AED-6711-491B-B9B6-499995242606}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{63BA4AED-6711-491B-B9B6-499995242606}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -47,5 +53,6 @@ Global
 		{215F36F0-542C-4D84-887E-6E7CB39B6C41} = {E4F6C4F9-4420-4B1B-BCAE-2A46FD193CC3}
 		{9EA5AE93-8386-4CD1-80C1-CFE36DE2D483} = {E4F6C4F9-4420-4B1B-BCAE-2A46FD193CC3}
 		{5BA34CCF-2576-49ED-82F3-BD7351BA1CD7} = {E4F6C4F9-4420-4B1B-BCAE-2A46FD193CC3}
+		{63BA4AED-6711-491B-B9B6-499995242606} = {E4F6C4F9-4420-4B1B-BCAE-2A46FD193CC3}
 	EndGlobalSection
 EndGlobal
