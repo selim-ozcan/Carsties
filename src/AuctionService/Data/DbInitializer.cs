@@ -15,7 +15,7 @@ public class DbInitializer
 
     private static void SeedData(AuctionDbContext context)
     {
-        context.Database.Migrate();
+        //context.Database.Migrate();
 
         if (context.Auctions.Any())
         {
