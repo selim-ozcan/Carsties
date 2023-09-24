@@ -1,7 +1,10 @@
-export default function Home() {
+import { get } from "http";
+import Listing from "./auctions/Listings";
+
+export default async function Home() {
   return (
     <div>
-      <h3 className="text-3xl font-semibold">Content goes here</h3>
+      <Listing></Listing>
     </div>
   );
 }

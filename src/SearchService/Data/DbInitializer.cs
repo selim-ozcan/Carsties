@@ -23,7 +23,6 @@ public class DbInitializer
         
         var httpClient = scope.ServiceProvider.GetService<AuctionSvcHttpClient>();
         var items = await httpClient.GetItemsForSearchDb();
-        System.Console.WriteLine("asdfasdfasfaf");
 
         if (items.Count > 0) await DB.SaveAsync(items);  
         

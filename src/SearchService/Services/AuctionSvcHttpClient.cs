@@ -20,6 +20,9 @@ public class AuctionSvcHttpClient
             .Project(a => a.UpdatedAt.ToString())
             .ExecuteFirstAsync();
 
-        return await _httpClient.GetFromJsonAsync<List<Item>>(_configuration["AuctionServiceUrl"] + "/api/auctions?date=" + lastUpdated);
+        var items = await _httpClient.GetFromJsonAsync<List<Item>>(_configuration["AuctionServiceUrl"] + "/api/auctions");
+        System.Console.WriteLine("afdasfafafasfafaf");
+        System.Console.WriteLine(items);
+        return items;
     }
 }

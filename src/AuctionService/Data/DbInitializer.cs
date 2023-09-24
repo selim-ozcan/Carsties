@@ -17,11 +17,12 @@ public class DbInitializer
     {
         //context.Database.Migrate();
 
-        if (context.Auctions.Any())
-        {
-            Console.WriteLine("Already have data - no need to seed");
-            return;
-        }
+        // if (context.Auctions.Any())
+        // {
+        //     Console.WriteLine("Already have data - no need to seed");
+        //     return;
+        // }
+        context.Auctions.ExecuteDelete();
 
         var auctions = new List<Auction>()
         {
