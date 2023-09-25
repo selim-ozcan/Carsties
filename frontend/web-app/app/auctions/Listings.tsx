@@ -21,6 +21,8 @@ export default function Listing() {
       pageCount: state.pageCount,
       orderBy: state.orderBy,
       filterBy: state.filterBy,
+      seller: state.seller,
+      winner: state.winner,
     }),
     shallow
   );
@@ -40,15 +42,22 @@ export default function Listing() {
   if (!data) return <h3>Loading...</h3>;
   return (
     <>
+      {params.seller && <div>auctions sold by {params.seller}</div>}
       <Filters />
       {data.totalCount === 0 ? (
         <EmptyFilter showReset />
       ) : (
         <>
           <div className="grid grid-cols-4 gap-6">
-            {data.results.map((auction) => (
-              <AuctionCard auction={auction} key={auction.id}></AuctionCard>
-            ))}
+            {params.seller
+              ? data.results.map((auction) =>
+                  auction.seller === params.seller ? (
+                    <AuctionCard auction={auction} key={auction.id} />
+                  ) : null
+                )
+              : data.results.map((auction) => (
+                  <AuctionCard auction={auction} key={auction.id}></AuctionCard>
+                ))}
           </div>
           <div className="flex justify-center mt-4">
             <AppPagination
