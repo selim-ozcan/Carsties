@@ -1,7 +1,8 @@
 using MassTransit;
-using MongoDB.Driver;
-using MongoDB.Entities;
 using SearchService;
+using Polly;
+using Polly.Extensions.Http;
+using System.Net;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -38,13 +39,18 @@ app.UseAuthorization();
 
 app.MapControllers();
 
-try
+app.Lifetime.ApplicationStarted.Register(async () =>
 {
-    await DbInitializer.InitDb(app);
-}
-catch (Exception ex)
-{
-    Console.WriteLine(ex.Message);
-}
+    await Policy.Handle<TimeoutException>()
+        .WaitAndRetryAsync(5, retryAttempt => TimeSpan.FromSeconds(10))
+        .ExecuteAndCaptureAsync(async () =>  await DbInitializer.InitDb(app));
+
+});
 
 app.Run();
+
+static IAsyncPolicy<HttpResponseMessage> GetPolicy()
+    => HttpPolicyExtensions
+        .HandleTransientHttpError()
+        .OrResult(msg => msg.StatusCode == HttpStatusCode.NotFound)
+        .WaitAndRetryForeverAsync(_ => TimeSpan.FromSeconds(3));

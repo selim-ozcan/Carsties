@@ -15,14 +15,13 @@ public class DbInitializer
 
     private static void SeedData(AuctionDbContext context)
     {
-        //context.Database.Migrate();
+        context.Database.Migrate();
 
-        // if (context.Auctions.Any())
-        // {
-        //     Console.WriteLine("Already have data - no need to seed");
-        //     return;
-        // }
-        context.Auctions.ExecuteDelete();
+        if (context.Auctions.Any())
+        {
+            Console.WriteLine("Already have data - no need to seed");
+            return;
+        }
 
         var auctions = new List<Auction>()
         {
