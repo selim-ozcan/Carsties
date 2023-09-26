@@ -2,7 +2,7 @@
 
 import { getBidsForAuction } from "@/app/actions/auctionActions";
 import Heading from "@/app/components/Heading";
-import { useBidStore } from "@/hooks/useBidStore";
+import { useBidStore } from "@/app/hooks/useBidStore";
 import { Auction, Bid } from "@/types";
 import { User } from "next-auth";
 import React, { useEffect, useState } from "react";
