@@ -55,3 +55,10 @@
 /Users/selim/repo/Carsties/src/AuctionService/bin/Debug/net7.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
 /Users/selim/repo/Carsties/src/AuctionService/bin/Debug/net7.0/Microsoft.IdentityModel.Tokens.dll
 /Users/selim/repo/Carsties/src/AuctionService/bin/Debug/net7.0/System.IdentityModel.Tokens.Jwt.dll
+/Users/selim/repo/Carsties/src/AuctionService/bin/Debug/net7.0/Google.Protobuf.dll
+/Users/selim/repo/Carsties/src/AuctionService/bin/Debug/net7.0/Grpc.AspNetCore.Server.dll
+/Users/selim/repo/Carsties/src/AuctionService/bin/Debug/net7.0/Grpc.AspNetCore.Server.ClientFactory.dll
+/Users/selim/repo/Carsties/src/AuctionService/bin/Debug/net7.0/Grpc.Core.Api.dll
+/Users/selim/repo/Carsties/src/AuctionService/bin/Debug/net7.0/Grpc.Net.Client.dll
+/Users/selim/repo/Carsties/src/AuctionService/bin/Debug/net7.0/Grpc.Net.ClientFactory.dll
+/Users/selim/repo/Carsties/src/AuctionService/bin/Debug/net7.0/Grpc.Net.Common.dll

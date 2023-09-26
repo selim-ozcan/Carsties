@@ -52,6 +52,7 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
         o.TokenValidationParameters.NameClaimType = "username";
     });
 
+builder.Services.AddGrpc();
 
 var app = builder.Build();
 
@@ -60,9 +61,9 @@ var app = builder.Build();
 app.UseAuthentication();
 app.UseAuthorization();
 
-System.Console.WriteLine(builder.Configuration["ASPNETCORE_URLS"]); 
 
 app.MapControllers();
+app.MapGrpcService<GrpcAuctionService>();
 
 try
 {
