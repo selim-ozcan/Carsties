@@ -1,5 +1,5 @@
 import { Button } from "flowbite-react";
-import ButtonGroup from "flowbite-react/lib/esm/components/Button/ButtonGroup";
+
 import React from "react";
 import { useParamsStore } from "../hooks/useParamsStore";
 import { AiOutlineClockCircle, AiOutlineSortAscending } from "react-icons/ai";
@@ -82,7 +82,7 @@ export default function Filters() {
       </div>
       <div>
         <span className="uppercase text-sm text-gray-500 mr-2">Page Size</span>
-        <ButtonGroup>
+        <Button.Group>
           {pageSizeButtons.map((value, i) => (
             <Button
               key={i}
@@ -97,7 +97,7 @@ export default function Filters() {
               {value}
             </Button>
           ))}
-        </ButtonGroup>
+        </Button.Group>
       </div>
     </div>
   );

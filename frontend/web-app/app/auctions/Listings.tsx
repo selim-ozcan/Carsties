@@ -2,7 +2,6 @@
 
 import React, { useEffect, useState } from "react";
 import AuctionCard from "./AuctionCard";
-import { Auction, PagedResult } from "@/types";
 import AppPagination from "../components/AppPagination";
 import { getData } from "../actions/auctionActions";
 import Filters from "./Filters";
@@ -53,7 +52,6 @@ export default function Listing() {
   if (loading) return <h3>Loading...</h3>;
   return (
     <>
-      {params.seller && <div>auctions sold by {params.seller}</div>}
       <Filters />
       {data.totalCount === 0 ? (
         <EmptyFilter showReset />

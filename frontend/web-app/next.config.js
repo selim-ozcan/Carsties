@@ -9,6 +9,7 @@ const nextConfig = {
   images: {
     domains: ["cdn.pixabay.com", "i0.shbdn.com"],
   },
+  output: "standalone",
 };
 
 module.exports = nextConfig;

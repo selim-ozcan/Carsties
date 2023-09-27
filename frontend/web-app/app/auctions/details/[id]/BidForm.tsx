@@ -1,16 +1,16 @@
 "use client";
 
+import { placeBidForAuction } from "@/app/actions/auctionActions";
+import { numberWithCommas } from "@/app/lib/numberWithComma";
+import { useBidStore } from "@/app/hooks/useBidStore";
+import React from "react";
+import { FieldValues, useForm } from "react-hook-form";
+import { toast } from "react-hot-toast";
+
 type Props = {
   auctionId: string;
   highBid: number;
 };
-
-import { placeBidForAuction } from "@/app/actions/auctionActions";
-import { numberWithCommas } from '@/app/lib/numberWithComma';
-import { useBidStore } from '@/app/hooks/useBidStore';
-import React from "react";
-import { FieldValues, useForm } from "react-hook-form";
-import { toast } from "react-hot-toast";
 
 export default function BidForm({ auctionId, highBid }: Props) {
   const {
