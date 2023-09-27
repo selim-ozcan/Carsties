@@ -7,7 +7,7 @@ const nextConfig = {
     serverActions: true,
   },
   images: {
-    domains: ["cdn.pixabay.com"],
+    domains: ["cdn.pixabay.com", "i0.shbdn.com"],
   },
 };
 
